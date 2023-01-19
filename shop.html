@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Shopping Website</title>
+  
+</head>
+
+<body>
+  <header>
+    <h1>Shopping Website</h1>
+  </header>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="./shop.html"><img src="./favicon_io/Icon_favicon-32x32.png" alt="home"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about/About.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about/Contact_us.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- Navigation Bar Ends     -->
+  <main>
+    <div class="container pad">
+      <div class="row row-cols-2 row-cols-md-4 d-flex justify-content-center" style="width: 800px;">
+        <div class="col mb-4">
+          <div class="card">
+            <img class="image" src="./favicon_io/android-chrome-512x512.png" alt="Product 1">
+            <h2>Laptop</h2>
+            <p>$49.99</p>
+            <button onclick="addToCart(1)"><span>Button</span></button>
+          </div>
+        </div>
+        <div class="col mb-4">
+
+          <div class="card">
+            <img class="image" src="./favicon_io/2_android-chrome-512x512.png" alt="Product 2">
+            <h2>Windows 11</h2>
+            <p>$39.99</p>
+            <button onclick="addToCart(2)"><span>Button</span></button>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="mx-auto row " style="width:200px;"> -->
+
+        <div class="col mb-4">
+          <div class="card">
+            <img class="image" src="./favicon_io/3_android-chrome-512x512.png" alt="Product 3">
+            <h2>Bulb</h2>
+            <p>$9.99</p>
+            <button onclick="addToCart(3)"><span>Button</span></button>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img class="image" src="./favicon_io/4_android-chrome-512x512.png" alt="Product 4">
+            <h2>TV</h2>
+            <p>$19.99</p>
+            <button onclick="addToCart(4)"><span>Button</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
